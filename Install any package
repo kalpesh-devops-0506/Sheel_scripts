@@ -1,0 +1,18 @@
+#!/bin/bash
+
+<<Comment 
+
+We can install any package with the help of this script
+
+Comment
+
+
+echo "================================ INSTALLING $1 ============================================="
+
+sudo snap  install $1
+
+echo "==================== INSTALLED $1================================================"
+
+sudo systemctl status $1
+
+echo "=================== status of $1 ==============================="
